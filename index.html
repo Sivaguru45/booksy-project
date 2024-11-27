@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>booklight</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="navbar">
+        <h1>Booklight</h1>
+    </div>
+
+    <div class="container">  
+    <div class="book1">
+        <h2 style="color: lightgreen;">The song of ice and fire</h2>
+       
+        <h5>Gg martin</h5><br>
+       
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque unde quo dolorum reprehenderit ratione necessitatibus beatae explicabo veritatis illo fugiat.</p>
+       
+        
+    <br> <button class="btn" onclick="del()" style="background-color: lightgreen;"> delete </button>
+    
+
+    </div>
+    </div>
+    
+    <div class="overlay"></div>
+    <div class="popup">
+
+        <h2>Add Book</h2>
+    <form>
+        <input placeholder="Book Title" class="title">
+        <br> <input placeholder="Book Author" class="author">
+        <br> <textarea placeholder="Short Description" class="Description"></textarea>
+       
+        <br> <button class="btn3" style="color: lightcyan; background-color: black; border: none; padding: 5px; border-radius: 8px;">Add</button>
+        <button class="btn4" style="color: lightcyan; background-color: black; border: none; padding: 5px; border-radius: 8px; margin-left: 10px;" onclick="cancel(event)">Cancel</button>
+        <button class="clr" style="color: lightcyan; background-color: black; border: none; padding: 5px; border-radius: 8px; margin-left: 10px;">Clear</button>
+    </form>
+    </div>
+
+    <button class="btn2" id="btn-2" onclick="p()">+</button>
+
+    
+    <script src="script.js"></script>
+    
+</body>
+</html>
